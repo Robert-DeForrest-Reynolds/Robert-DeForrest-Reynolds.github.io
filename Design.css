@@ -1,7 +1,56 @@
+.Color_Palette{
+    color: #46103b;
+    color: #930d99;
+    color: #139735;
+    color: #094812;
+    color: #10400f;
+}
 body {
     background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div {
     margin: 15px;
+}
+
+.Container {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+.Main_Navigation a{
+    grid-row: 1;
+    float: left;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #139735;
+    font-weight: bold;
+}
+
+.Pineapple_Information {
+    grid-row: 2;
+    background-color:#46103b;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #10400f;
+    color: #139735;
+    padding: 14px 16px;
+}
+
+.Pineapple_Information_Mini_Panel p{
+    background-color:#46103b;
+    border-color: #10400f;
+    border-style: solid;
+    color: #139735;
+    padding: 14px 16px;
+    height: auto;
+    width: fit-content;
+}
+
+.Pineapple_Information_Mini_Panel code{
+    color: 094812;
+    white-space: pre;
 }
