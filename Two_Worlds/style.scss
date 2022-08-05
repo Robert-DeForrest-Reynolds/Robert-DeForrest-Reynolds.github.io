@@ -28,7 +28,7 @@
   }
 
   &__title {
-    font: min(35px, 32px) cookie, cursive;
+    font: min(35px, 30px) cookie, cursive;
     color: var(--wesbos);
     letter-spacing: 2px;
     margin: 0;
@@ -42,7 +42,7 @@
 
   &__price {
     color: var(--wesbos);
-    font: 31px cookie, cursive;
+    font: min(31px, 26px) cookie, cursive;
   }
   
   &__description {
