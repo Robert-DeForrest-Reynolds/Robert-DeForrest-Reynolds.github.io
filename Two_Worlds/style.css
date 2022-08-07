@@ -1,41 +1,31 @@
 :root {
-  --wesbos: #ffc600;
+  --wesbos: #8F6F9A;
 }
 
-.menu {
-  display: none;
-}
-.menu--is-visible {
-  display: grid;
-}
-@media (min-width: 768px) {
-  .menu {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 80px;
-  }
-}
-
-.item__header {
-  display: flex;
-  align-items: baseline;
-}
-.item__title {
-  font: 35px cookie, cursive;
-  color: var(--wesbos);
-  letter-spacing: 2px;
+body {
   margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), radial-gradient(circle at top left, #660000 15%, #4d0000 30%, rgba(0, 0, 0, 0) 31%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle at bottom right, #305082 15%, #22395d 30%, rgba(0, 0, 0, 0) 31%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom right, #800000 10%, #34568b 90%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
 }
-.item__dots {
-  flex: 1;
-  border-bottom: 1px dashed #aaa;
-  margin: 0 15px;
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
 }
-.item__price {
-  color: var(--wesbos);
-  font: 31px cookie, cursive;
-}
-.item__description {
-  margin-bottom: 40px;
+
+h2 {
+  display: inline-block;
+  border-bottom: 3px solid var(--wesbos);
+  margin: 0;
+  font-size: 50px;
+  font-family: "Century Gothic";
+  font-weight: lighter;
 }
 
 .buttons-container {
@@ -62,45 +52,59 @@
   text-transform: uppercase;
 }
 
-.highlight {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  background: var(--wesbos);
-  border-radius: 3px;
-  z-index: -1;
-  transition: 0.24s;
+.button--is-active {
+  background: #8F6F9A;
+}
+
+.menu {
+  display: none;
+}
+.menu--is-visible {
+  display: grid;
+  padding: 0px 25px;
+}
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }
+}
+
+.heading {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  border: 0;
+}
+
+.item__header {
+  display: flex;
+  align-items: baseline;
+}
+.item__title {
+  font: 30px "Century Gothic";
+  color: var(--wesbos);
+  letter-spacing: 2px;
+  padding-left: 10px;
+  border-left: 3px solid #8F6F9A;
+  margin: 0;
+}
+.item__dots {
+  flex: 1;
+  border-bottom: 1px dashed #aaa;
+  margin: 0 15px;
+}
+.item__price {
+  color: var(--wesbos);
+  font: 26px "Century Gothic";
+}
+.item__description {
+  margin-bottom: 40px;
 }
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.imgur.com/er8DtBW.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #fff;
-}
-
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h2 {
-  display: inline-block;
-  border-bottom: 4px solid var(--wesbos);
-  margin-top: 0;
-  font: 50px cookie, cursive;
 }
 
 /*# sourceMappingURL=style.css.map */
