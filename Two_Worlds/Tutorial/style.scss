@@ -72,12 +72,27 @@ display: none;
     }
 
     &__description {
-        font: 1rem verdana;
-        text-indent: 10%;
-        line-height: 2;
         padding: 25px 25px;
         border-top: 2px solid #8F6F9A;
         margin: 60px 0 0;
+    }
+
+    &__paragraph {
+        font: 1rem verdana;
+        text-indent: 10%;
+        line-height: 1.8;
+        padding: 0 10%;
+    }
+
+    &__list {
+        padding-left: 20%;
+        list-style: none;
+    }
+
+    li::before {
+        content: "-";
+        padding-right: 20px;
+        color: #8F6F9A;
     }
 }
 
