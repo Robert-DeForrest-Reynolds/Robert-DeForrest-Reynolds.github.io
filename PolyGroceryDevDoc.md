@@ -8,19 +8,33 @@ h2  { color: purple }
 <table>
 <td><h1> Focuses </h1>
 
-- **<u>High-Stability</u>** Code Base, **<u>Extensible</u>**, and Easy to Understand
-	- I want players to be able to modify NPC behavior, economic systems, etc., so we ourselves can study, and tweak over time the default/standard
-- **Large** Product Index
-	- Release new Product Licenses in groups of 6 minimum
-	- Brand Licenses are bought, and then you can order products from that brand, some items will be locked behind player level requirements, or loyalty requirements with the brand
-	- Brand Licenses can have different levels, never going above 4, for example Kochtec 1, Kochtec 2, Kochtec 3, Kochtec 4, or Scentie 1, Scentie 2, Scentie 3
-	- Products are not desired or expected by customers until they've been on the floor at least once
-	- Food, Hygiene, Cosmetic, Clothing, Entertainment, Automotive, Electronic, Furniture, and more
-	- I want this to feel like a collectible game on the side, the ability to get all products, and large stable inventories of them is of great importance
-- Stable Framerate During High-Level Gameplay
-	- I want at minimum 60 FPS *easy* on a load end computer
-- *Large* Expansion Potential
-	- I want you to be able to expand your store nightmarishly large
+<ul>
+<li>**<u>High-Stability</u>** Code Base, **<u>Extensible</u>**, and Easy to Understand
+	<ul>
+	<li>I want players to be able to modify NPC behavior, economic systems, etc., so we ourselves can study, and tweak over time the default/standard<li>
+	</ul>
+<li>
+<li>**Large** Product Index
+	<ul>
+	<li>Release new Product Licenses in groups of 6 minimum<li>
+	<li>Brand Licenses are bought, and then you can order products from that brand, some items will be locked behind player level requirements, or loyalty requirements with the brand<li>
+	<li>Brand Licenses can have different levels, never going above 4, for example Kochtec 1, Kochtec 2, Kochtec 3, Kochtec 4, or Scentie 1, Scentie 2, Scentie 3<li>
+	<li>Products are not desired or expected by customers until they've been on the floor at least once<li>
+	<li>Food, Hygiene, Cosmetic, Clothing, Entertainment, Automotive, Electronic, Furniture, and more<li>
+	<li>I want this to feel like a collectible game on the side, the ability to get all products, and large stable inventories of them is of great importance<li>
+	</ul>
+<li>
+<li>Stable Framerate During High-Level Gameplay
+	<ul>
+	<li>I want at minimum 60 FPS *easy* on a load end computer<li>
+	</ul>
+<li>
+<li>*Large* Expansion Potential
+	<ul>
+	<li>I want you to be able to expand your store nightmarishly large<li>
+	</ul>
+<li>
+</uL>
 
 Every month I want to release a very thoughtful devlog written by me. I don't want to do this any earlier, or later, as I feel a month is a long enough wait as a consumer, and is a small enough timespan still to provide a short-form, consumable piece of media.
 
@@ -49,12 +63,17 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 	<li>Checking Out</li>
 	</ul>
 </li>
- - Controlling Store Hours
-	- Opening/Closing
- - Bank
-	- Loans
- - 12 Unique Items
- - Audio & Sound Effects
+<li>Controlling Store Hours
+	<ul>
+	<li>Opening/Closing</li>
+	</ul>
+</li>
+<li>Bank</li>
+	<ul>
+	<li>Loans</li>
+	</ul>
+<li>12 Unique Items</li>
+<li>Audio & Sound Effects</li>
 </ul>
 </td>
 
