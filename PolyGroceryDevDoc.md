@@ -32,6 +32,7 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 </td>
 
 <td> <h1> Demo Goals </h1>
+
 	- Customer Shopping
 	- Checking Out
 	- Upgrading Area
@@ -53,7 +54,7 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 
 # Core Documentation
 
-## <h2> Brand Names </h2>
+<h2> Brand Names </h2>
 - TruePicks - Kitchen Products, and Appliances
 	 - Aluminum Foil
 	 - Plastic Wrap
@@ -95,7 +96,7 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 	- Chocolate Bars
 	- Sour Candies
 
-## <h2> Terminology </h2>
+<h2> Terminology </h2>
 
 **Store Floor**
 >The area that customers shop within. The center of the game world is the center of the player's store, and the store expands from there center.
@@ -106,20 +107,20 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 Player Storage
 >Any area outside 
 
-## <h2> Top Down Map </h2>
+<h2> Top Down Map </h2>
 There will be a top down 2D map that depicts the store. It has a key, that can be customized, and added to. The player can manage their department locations, and more through this map.
 
-## <h2> Store Construction System </h2>
+<h2> Store Construction System </h2>
 The floor, and walls are solid objects that cannot be passed through.
 There is no global grid, and there will never be a global grid. We will use snapping tools to provide fine-tuned, precision placement of items.
 
-#### Sister-Snapping
+<h4> Sister-Snapping </h4>
 
 Snapping of All Placeable Items
 	 - Universal Grid Snapping, or Snapping to "Related" Items, for example shelves to shelves, or fridges to fridges
 	 - Ctrl to snap to universal grid. When looking when a placed item, will check if item being placed is related to the item your looking at, if so will snap to it's edge, this is default behavior, and does not require holding any buttons
 
-## <h2> Departments </h2>
+<h2> Departments </h2>
 The player will be able to unlock, and purchase subdepartments that will attach to the outside of the store by default. The player will be able to build them custom any where on the store floor as long specific parameters are fulfilled, but as this will be complicated, and only for the most dedicated, the default will be to attach them to the outside, and make them as well expandable. If the player does choose to build there department location on the store floor, if the external department room has no registers, it will automatically become part of the operations floor.
 - Deli
 - Bakery
