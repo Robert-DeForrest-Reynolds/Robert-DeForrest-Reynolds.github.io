@@ -4,6 +4,9 @@ CoreHeading { color: green; font-size: 64px; }
 InformationHeading  { color: purple }
 </style>
 
+<body>
+
+
 <table>
 
 <td><CoreHeading> Focuses </CoreHeading>
@@ -214,3 +217,6 @@ The player will be able to unlock, and purchase subdepartments that will attach 
 - You'll have to schedule employee breaks, and they will randomly use the bathroom 
 
 # Programming Architecture
+
+
+</body>
