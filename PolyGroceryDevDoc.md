@@ -1,15 +1,14 @@
 <style>
+body {background-color: #FF5733;}
 td { vertical-align: top; width:25%;}
 CoreHeading { color: green; font-size: 64px; }
 InformationHeading  { color: purple }
 </style>
 
-<body>
-
-
 <table>
 
 <td><CoreHeading> Focuses </CoreHeading>
+</br>
 
 - **<u>High-Stability</u>** Code Base, **<u>Extensible</u>**, and Easy to Understand
 	- I want players to be able to modify NPC behavior, economic systems, etc., so we ourselves can study, and tweak over time the default/standard
@@ -217,6 +216,3 @@ The player will be able to unlock, and purchase subdepartments that will attach 
 - You'll have to schedule employee breaks, and they will randomly use the bathroom 
 
 # Programming Architecture
-
-
-</body>
