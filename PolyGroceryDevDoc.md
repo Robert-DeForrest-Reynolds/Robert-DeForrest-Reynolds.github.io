@@ -33,21 +33,21 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 
 <td> <h1> Demo Goals </h1>
 
-	- Customer Shopping
+ - Customer Shopping
+ - Checking Out
+ - Upgrading Area
+ - Buying Shelves, Lights, and Storage Shelves
+ - Buying Products, and Restocking
+ - Hiring Employees
+	- Assigning
+	- Restocking
 	- Checking Out
-	- Upgrading Area
-	- Buying Shelves, Lights, and Storage Shelves
-	- Buying Products, and Restocking
-	- Hiring Employees
-		- Assigning
-		- Restocking
-		- Checking Out
-	- Controlling Store Hours
-		- Opening/Closing
-	- Bank
-		- Loans
-	- 12 Unique Items
-	- Audio & Sound Effects
+ - Controlling Store Hours
+	- Opening/Closing
+ - Bank
+	- Loans
+ - 12 Unique Items
+ - Audio & Sound Effects
 </td>
 
 </table>
