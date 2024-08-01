@@ -34,7 +34,7 @@ h2  { color: purple }
 	<li>I want you to be able to expand your store nightmarishly large<li>
 	</ul>
 <li>
-</uL>
+</ul>
 
 Every month I want to release a very thoughtful devlog written by me. I don't want to do this any earlier, or later, as I feel a month is a long enough wait as a consumer, and is a small enough timespan still to provide a short-form, consumable piece of media.
 
