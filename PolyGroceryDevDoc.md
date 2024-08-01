@@ -1,13 +1,12 @@
 <style>
-body {background-color: #FF5733;}
-td { vertical-align: top; width:25%;}
-CoreHeading { color: green; font-size: 64px; }
-InformationHeading  { color: purple }
+body {background-color: #3e3f42;}
+td { background-color: #5c5d61; vertical-align: top; width:25%;}
+h1 { color: green; font-size: 64px; }
+h2  { color: purple }
 </style>
 
 <table>
-
-<td><CoreHeading> Focuses </CoreHeading>
+<td><h1> Focuses </h1>
 </br>
 
 - **<u>High-Stability</u>** Code Base, **<u>Extensible</u>**, and Easy to Understand
@@ -33,7 +32,7 @@ The player is going to store with a more convenient store scale store, and move 
 We hope to create ideas that essentially compressing or compartmentalizing complex problems to solve late-game scale problems, like online orders from customers, instead of in-person customers to reduce AI use, and visual objects. Auto-stocking shelving units that can be supplied from above or below when utilizing multiple floors. We can steal a lot of real-life logistics ideas for solving these problems, and even implement unrealistic ways to solve these problems like robots, conveyors, drones, or other technology.
 </td>
 
-<td> <CoreHeading> Demo Goals </CoreHeading>
+<td> <h1> Demo Goals </h1>
 
 - Customer Shopping
 - Checking Out
@@ -56,7 +55,7 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 
 # Core Documentation
 
-## <InformationHeading> Brand Names </InformationHeading>
+## <h2> Brand Names </h2>
 - TruePicks - Kitchen Products, and Appliances
 	 - Aluminum Foil
 	 - Plastic Wrap
@@ -98,7 +97,7 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 	- Chocolate Bars
 	- Sour Candies
 
-## <InformationHeading> Terminology </InformationHeading>
+## <h2> Terminology </h2>
 
 **Store Floor**
 >The area that customers shop within. The center of the game world is the center of the player's store, and the store expands from there center.
@@ -109,10 +108,10 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 Player Storage
 >Any area outside 
 
-## <InformationHeading> Top Down Map </InformationHeading>
+## <h2> Top Down Map </h2>
 There will be a top down 2D map that depicts the store. It has a key, that can be customized, and added to. The player can manage their department locations, and more through this map.
 
-## <InformationHeading> Store Construction System </InformationHeading>
+## <h2> Store Construction System </h2>
 The floor, and walls are solid objects that cannot be passed through.
 There is no global grid, and there will never be a global grid. We will use snapping tools to provide fine-tuned, precision placement of items.
 
@@ -122,7 +121,7 @@ Snapping of All Placeable Items
 	 - Universal Grid Snapping, or Snapping to "Related" Items, for example shelves to shelves, or fridges to fridges
 	 - Ctrl to snap to universal grid. When looking when a placed item, will check if item being placed is related to the item your looking at, if so will snap to it's edge, this is default behavior, and does not require holding any buttons
 
-## <InformationHeading> Departments </InformationHeading>
+## <h2> Departments </h2>
 The player will be able to unlock, and purchase subdepartments that will attach to the outside of the store by default. The player will be able to build them custom any where on the store floor as long specific parameters are fulfilled, but as this will be complicated, and only for the most dedicated, the default will be to attach them to the outside, and make them as well expandable. If the player does choose to build there department location on the store floor, if the external department room has no registers, it will automatically become part of the operations floor.
 - Deli
 - Bakery
