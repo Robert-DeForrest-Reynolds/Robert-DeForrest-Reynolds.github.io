@@ -7,7 +7,6 @@ h2  { color: purple }
 
 <table>
 <td><h1> Focuses </h1>
-</br>
 
 - **<u>High-Stability</u>** Code Base, **<u>Extensible</u>**, and Easy to Understand
 	- I want players to be able to modify NPC behavior, economic systems, etc., so we ourselves can study, and tweak over time the default/standard
@@ -33,22 +32,21 @@ We hope to create ideas that essentially compressing or compartmentalizing compl
 </td>
 
 <td> <h1> Demo Goals </h1>
-
-- Customer Shopping
-- Checking Out
-- Upgrading Area
-- Buying Shelves, Lights, and Storage Shelves
-- Buying Products, and Restocking
-- Hiring Employees
-	- Assigning
-	- Restocking
+	- Customer Shopping
 	- Checking Out
-- Controlling Store Hours
-	- Opening/Closing
-- Bank
-	- Loans
-- 12 Unique Items
-- Audio & Sound Effects
+	- Upgrading Area
+	- Buying Shelves, Lights, and Storage Shelves
+	- Buying Products, and Restocking
+	- Hiring Employees
+		- Assigning
+		- Restocking
+		- Checking Out
+	- Controlling Store Hours
+		- Opening/Closing
+	- Bank
+		- Loans
+	- 12 Unique Items
+	- Audio & Sound Effects
 </td>
 
 </table>
