@@ -35,25 +35,51 @@ The buttons: Home, Pineapple turned into side panel, akin to table of contents, 
 .PineappleIconOutline {
     background-color: aliceblue;
     /* width: 5%; */
+    margin-top: auto;
+    margin-bottom: auto;
     border-radius: 50%;
     padding: 10px;
 }
 
 .PineappleIcon {
     width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .PineappleTitleDiv {
     position: relative;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    grid-auto-rows: auto fit-content() fit-content();
     height: 100%;
     font-size:60px;
 }
 
 .PineappleTitle {
-    position: absolute;
-    bottom: 0;
+    margin: auto;
     display: inline-block;
     color: yellow;
+    grid-row: 1;
+}
+
+.TopTitleLine {
+    margin: 0 auto 0 auto;
+    background-color: yellow;
+    padding: 10px;
+    height: 1%;
+    width: 4em;
+    grid-row: 2;
+}
+
+.BottomTitleLine {
+    margin: 0 auto 0 auto;
+    background-color: yellow;
+    padding: 10px;
+    height:  1px;
+    width: 2em;
+    grid-row: 3;
 }
 
 .Container {
