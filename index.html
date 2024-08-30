@@ -1,27 +1,214 @@
 <!DOCTYPE html>
 <html>
 
+<title>The EliJ Project</title>
+
 <link rel="stylesheet" href="Design.css">
 <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 <link rel="icon" href="pineapple.png">
 
 <body>
-    <div class="PineappleHeader">
+    <header class="PageHeader">
         <div class="PineappleIconOutline">
             <img class="PineappleIcon" src="Pineapple_Icon_AI.jpeg" alt="Pineapple Icon">
         </div>
         <div class="PineappleTitleDiv">
             <div class="PineappleTitle">Pineapple</div>
-            <div class="TopTitleLine"></div>
-            <div class="BottomTitleLine"></div>
         </div>
-    </div>
-    <div class="MainNavigation">
-        <a href="index.html">Home</a>
-        <a href="Pineapple.html">Pineapple</a>
-    </div>
-    <div>
-        <p>Welcome to the Pineapple Programming Language</p>
+        <div class="HeaderMessage">
+            <p>Welcome to the Pineapple Programming Language</p>
+        </div>
+    </header>
+    <div class="HeaderDivider"></div>
+    <div class="Documentation">
+        <div class="LeftHandNavigation">
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Introduction">Introduction</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Variables">Variables</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Conditionals">Conditionals</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Loops">Loops</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Functions">Functions</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Objects">Objects</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Inheritance">Inheritance</a>
+            </div>
+        </div>
+        <div class="VerticalSeparator"></div>
+        <div class="DocumentationContent">
+            <h2 id="Introduction" class="ContentHeading">Introduction</h2>
+            <p>Pineapple is the name of the language. Iwa is the name of the compiler I built for it. Iwa generates C code, and utilizes clang to compile the C code.
+               Pineapple gets translated into an intermediate language using Python that is easier to work with, that is then used when generating C code.
+               This intermediate code can then be easily made compatible with any compiler.
+            </p>
+
+
+            <h2 id= "Variables" class="ContentHeading">Variables</h2>
+            <code>
+            <span class="PineappleLanguage">
+                <span class="Type">Int</span> <span class="Variable">Health</span> <span class="Operator">=</span> 50;
+                <br>
+                <span class="Type">Str</span> <span class="Variable">FirstName</span> <span class="Operator">=</span> <span class="String">Roger</span>;
+                <br>
+                <span class="Type">Str</span> <span class="Variable">LastName</span> <span class="Operator">=</span> <span class="String">Rabbit</span>;
+                <br>
+                <span class="Type">Str</span> <span class="Variable">FullName</span> <span class="Operator">=</span> <span class="String">"{FirstName} {LastName}"</span>;
+                <br>
+                <span class="Type">Str</span> <span class="Variable">Multiline</span> = | <span class="Comment"># Always skips the first new line #</span>
+                <span class="String">
+                <br>
+                This is
+                <br>
+                a multiline
+                <br>
+                string.
+                <br>
+                ; <span class="Comment"># Also skips the last new line #</span>
+                </span>
+                <br>
+                <span class="Comment"># Strings are arrays as always, and can be index, and sliced. Slices are inclusive. #</span>
+                <br>
+                <span class="Type">Str</span> <span class="Variable">Greeting</span> <span class="Operator">=</span> <span class="String">"Hello there!"</span>;
+                <br>
+                <span class="Type">Str</span> <span class="Variable">Hello</span> <span class="Operator">=</span> <span class="Variable">Greeting</span>[0:4];
+                
+            </span>
+            </code>
+            
+            <h2 id= "Conditionals" class="ContentHeading">Conditionals</h2>
+            <code>
+                <span class="String">Str</span> <span class="Variable">Food</span> <span class="Operator">=</span> <span class="Function">In</span>(<span class="String">"What is your favorite food?"</span>);
+                <br>
+                <span class="ReservedKeyword">If</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Grapefruit"</span> {
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I don't like this food."</span>);
+                <br>
+                } <span class="ReservedKeyword">Or</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Strawberries"</span> {
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I like this food."</span>);
+                <br>
+                } <span class="ReservedKeyword">Else</span> {
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I don't know about this food."</span>);
+                <br>
+                }
+                <br>
+                
+                <br>
+                <span class="Comment"># `not in` is a thing #</span>
+                <br>
+                <span class="Type">Lst</span> <span class="Variable">Students</span> = [<span class="String">"Jeffery"</span>, <span class="String">"Sara"</span>, <span class="String">"Kevin"</span>];
+                <br>
+                <span class="ReservedKeyword">If</span> <span class="String">"Aaron"</span> <span class="ReservedKeyword">not in</span> <span class="Variable">Students</span> {
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="Variable">Students</span>.<span class="Method">Append</span>(<span class="String">"Aaron"</span>);
+                <br>
+                }
+                <br>
+                </code>
+
+
+                <h2 id= "Loops" class="ContentHeading">Loops</h2>
+            <code>
+                <span class="Type">Lst</span> <span class="Variable">Fruits</span> = [<span class="String">"Oranges"</span>, <span class="String">"Apples"</span>, <span class="String">"Bananas"</span>]
+                <br>
+                <span class="ReservedKeyword">For</span> <span class="Type">Str</span> <span class="Variable">Fruit</span> <span class="ReservedKeyword">in</span> <span class="Variable">Fruits</span> {
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="Variable">Fruits</span>);
+                <br>
+                }
+                <br>
+                
+                <br>
+                <span class="Type">Dct</span> <span class="Variable">Students</span> <span class="Operator">=</span> [
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="String">"Kevin"</span>:14,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="String">"Bill"</span>:15,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="String">"Julia"</span>>:14,
+                <br>
+                ]
+                <br>
+                
+                <br>
+                <span class="ReservedKeyword">For</span> <span class="Type">Str</span> <span class="Variable">Name</span>, <span class="Type">Int</span> <span class="Variable">Age</span> <span class="ReservedKeyword">in</span> <span class="Variable">Students</span>{
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"{<span class="Variable">Name</span>} is {<span class="Variable">Age</span>} years old"</span>);
+                <br>
+                }
+                <br>
+            </code>
+
+            <h2 id= "Functions" class="ContentHeading">Functions</h2>
+            <code>
+            <span class="ReservedKeyword">Fnc</span> <span class="Function">Sum</span>(<span class="Type">Int</span> <span class="Variable">X</span>, <span class="Type">Int</span> <span class="Variable">Y</span>){
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Return</span> <span class="Variable">X</span> <span class="Operator">+</span> <span class="Variable">Y</span>;
+            <br>
+            }
+            <br>
+            <span class="Function">Sum</span>(<span class="Type">Int</span> 5, <span class="Type">Int</span> 7)
+            </code>
+
+            <h2 id= "Objects" class="ContentHeading">Objects</h2>
+            <code>
+            <span class="ReservedKeyword">Obj</span> <span class="Object">Person</span> {
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Init</span>(<span class="Type">Str</span> <span class="Variable">InitialName</span>){
+            <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Comment"># All Object variables are fully scoped to the object,</span>
+            <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Comment">and can be accessed from any method without any notation. #</span>
+            <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Type">Str</span> <span class="Variable">Name</span> <span class="Operator">=</span> <span class="Variable">InitialName</span>;
+            <br>
+            &emsp;&emsp;&emsp;&emsp;}
+            <br>
+            }
+        </code>
+
+
+        <h2 id= "Inheritance" class="ContentHeading">Inheritance</h2>
+        <code>
+            <br><span class="ReservedKeyword">Obj</span> <span class="Object">Human</span> {
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Init</span>(<span class="Type">Str</span> <span class="Variable">InitialName</span>){
+            <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Type">Int</span> <span class="Variable">Age</span> <span class="Operator">=</span> <span class="Variable">InitialAge</span>;
+            <br>
+            &emsp;&emsp;&emsp;&emsp;}
+            <br>
+            }
+            <br>
+            <br><span class="ReservedKeyword">Obj</span> <span class="Object">Person</span> | <span class="Object">Human</span> {
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Init</span>(<span class="Type">Str</span> <span class="Variable">InitialName</span>, <span class="Type">Int</span> <span class="Variable">InitialAge</span>){
+            <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Type">Str</span> <span class="Variable">Name</span> <span class="Operator">=</span> <span class="Variable">InitialName</span>;
+            <br>
+            &emsp;&emsp;&emsp;&emsp;}
+            <br>
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Greeting</span>(){
+            <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Return</span> <span class="String">"Hello, my name is {<span class="Variable">Name</span>}, and I'm {<span class="Variable">Age</span>} years old."</span>;
+            <br>
+            &emsp;&emsp;&emsp;&emsp;}
+            <br>
+            }
+        </code>
+        </div>
     </div>
 </body>
 
