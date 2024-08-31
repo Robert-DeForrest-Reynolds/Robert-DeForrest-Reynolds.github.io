@@ -157,13 +157,24 @@
                 string.
                 <br>
                 ; <span class="Comment"># Also skips the last new line #</span>
-                </span>
                 <br>
                 <span class="Comment"># Strings are arrays as always, and can be index, and sliced. Slices are inclusive. #</span>
                 <br>
                 <span class="Type">Str</span> <span class="Variable">Greeting</span> <span class="Operator">=</span> <span class="String">"Hello there!"</span>;
                 <br>
                 <span class="Type">Str</span> <span class="Variable">Hello</span> <span class="Operator">=</span> <span class="Variable">Greeting</span>[0:4];
+                <br>
+                <br>
+                <span class="Type">Dct</span> <span class="Variable">Students</span> <span class="Operator">=</span> [
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="String">"Kevin"</span>:14,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="String">"Bill"</span>:15,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="String">"Julia"</span>:14,
+                <br>
+                ]
+                <br>
                 </code>
                 <br>
                 You can explicitly cast if one would like.
@@ -183,7 +194,7 @@
                 <br>
                 # Compiler error that this will overflow: #
                 <br>
-                Int8 Small = 200;
+                Int8 Small = 256;
                 </code>
                 <p>
                     Pineapple attempts to take on a form of test-driven philosophy during compilation.
