@@ -25,7 +25,7 @@
     <div class="Documentation">
         <div class="LeftHandNavigation">
             <div class="ListItem">
-                <a class="ContentHeading" href="#IntroductionForNewProgrammers">Introduction for New Programmers</a>
+                <a class="ContentHeading" href="#IntroductionForNewProgrammers">Introduction for New Programmers (WIP)</a>
             </div>
             <div class="ListItem">
                 <a class="ContentHeading" href="#IntroductionForExperienceProgrammers">Introduction for Experienced Programmers</a>
@@ -84,8 +84,8 @@
                This intermediate code can then be easily made compatible with any compiler.
             </p>
             <p>
-                Pineapple parses line-by-line, and does not care about indentation. Whitespace between keywords is required, but is not required between operators and symbols, for example:
-                <code class="InlineCodeExample">Int X=5</code> is valid, but <code class="InlineCodeExample">IntX=5</code> is not as there is no way for the compiler to identify the type, and declarative name.
+                The language has very specific rules of how syntax is allowed, and ordered, allowing for a parser to be very easily made. In attempt to truly bridge the gap in transcompiling between languages.
+                I want to make an attempt at creating a unified system to tokenize, and communicate between languages.
             </p>
             <p>
                 You can think of every line as a statement. A line can contain two statements, but the philosophy of the languages asks for modularity, and to conform to the single-responsibility principle, within reason.
@@ -138,7 +138,6 @@
 
             <h2 id= "Variables" class="ContentHeading">Variables</h2>
             <code class="CodeExample">
-            <span class="PineappleLanguage">
                 <span class="Type">Int</span> <span class="Variable">Health</span> <span class="Operator">=</span> 50;
                 <br>
                 <span class="Type">Str</span> <span class="Variable">FirstName</span> <span class="Operator">=</span> <span class="String">Roger</span>;
@@ -195,13 +194,12 @@
                 # Compiler error that this will overflow: #
                 <br>
                 Int8 Small = 256;
-                </code>
-                <p>
-                    Pineapple attempts to take on a form of test-driven philosophy during compilation.
-                    Iwa will not let you compile what it thinks to be an unsafe program unless you painstakingly accept the consequences.
-                    This means that you should never ship a production product that does not check against it's bounds before compile time. All bounds are checked at 2 million by default.
-                </p>
-            </span>
+            </code>
+            <p>
+                Pineapple attempts to take on a form of test-driven philosophy during compilation.
+                Iwa will not let you compile what it thinks to be an unsafe program unless you painstakingly accept the consequences.
+                This means that you should never ship a production product that does not check against it's bounds before compile time. All bounds are checked at 2 million by default.
+            </p>
             
             <h2 id= "Conditionals" class="ContentHeading">Conditionals</h2>
             <code class="CodeExample">
