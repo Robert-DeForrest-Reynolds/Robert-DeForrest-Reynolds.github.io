@@ -25,7 +25,22 @@
     <div class="Documentation">
         <div class="LeftHandNavigation">
             <div class="ListItem">
-                <a class="ContentHeading" href="#Introduction">Introduction</a>
+                <a class="ContentHeading" href="#IntroductionForNewProgrammers">Introduction for New Programmers</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#IntroductionForExperienceProgrammers">Introduction for Experienced Programmers</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#TheLanguage">The Language</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Output">Output</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Input">Input</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Comments">Comments</a>
             </div>
             <div class="ListItem">
                 <a class="ContentHeading" href="#Variables">Variables</a>
@@ -40,23 +55,89 @@
                 <a class="ContentHeading" href="#Functions">Functions</a>
             </div>
             <div class="ListItem">
+                <a class="ContentHeading" href="#Importing&Modules">Importing & Modules</a>
+            </div>
+            <div class="ListItem">
                 <a class="ContentHeading" href="#Objects">Objects</a>
             </div>
             <div class="ListItem">
                 <a class="ContentHeading" href="#Inheritance">Inheritance</a>
             </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Casting">Casting</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Copying">Copying</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Strings">Strings</a>
+            </div>
+            <div class="ListItem">
+                <a class="ContentHeading" href="#Memory Management">Memory Management</a>
+            </div>
         </div>
         <div class="VerticalSeparator"></div>
         <div class="DocumentationContent">
-            <h2 id="Introduction" class="ContentHeading">Introduction</h2>
+            <h2 id="#IntroductionForProgrammers" class="ContentHeading">Introduction for Experienced Programmers</h2>
             <p>Pineapple is the name of the language. Iwa is the name of the compiler I built for it. Iwa generates C code, and utilizes clang to compile the C code.
                Pineapple gets translated into an intermediate language using Python that is easier to work with, that is then used when generating C code.
                This intermediate code can then be easily made compatible with any compiler.
             </p>
+            <p>
+                Pineapple parses line-by-line, and does not care about indentation. Whitespace between keywords is required, but is not required between operators and symbols, for example:
+                <code class="InlineCodeExample">Int X=5</code> is valid, but <code class="InlineCodeExample">IntX=5</code> is not as there is no way for the compiler to identify the type, and declarative name.
+            </p>
+            <p>
+                You can think of every line as a statement. A line can contain two statements, but the philosophy of the languages asks for modularity, and to conform to the single-responsibility principle, within reason.
+                We have opening, and closing tokens for code blocks containing multiple statements, and most importantly, all variables are immutable by default, and when the values are changed, if they are not assigned, they are not held.
+                <br><br>
+                Pineapple's memory management aims to be simple, easy to use, and east to extend. Iwa analyzes the source code you feed it, and attempts to create a memory safe program by testing against the bounds of each variable.
+                Everything is dynamically allocated otherwise, and if you need to take control of memory, you can access the heap exactly how you would an array.
+                <br><br>
+                All Int's are 64 bit signed integers by default unless otherwise compiling for a 32 bit system.
+                Pineapple explicitly supports standard implementions over backwards compatibility, and future proofing.
+                Therefore an expectation is allowed that you have access to the largest forms of data structures allowed by the system.
+                When you download the compiler for 32 bit systems, they will be 32 bit integers.
+                The `O` flag when compiling will tell Iwa to optimize, and finds the outer bounds of each integer case, and utilize a integer will less bits if allowed.
+                This will probably be a slow build as the project grows, but it's also probably necessary, and I'll hopefully optimize it overtime.
+            </p>
+            <code class="CodeExample">
+                Int X = 5;
+                <br>
+                Int Y = 6;
+                <br>
+                <br>
+                Out(&0);
+            </code>
+            <p>Outputs</p>
+            <code class="OutputCodeExample">5</code>
+
+            <p>You can assign values using this method:</p>
+            <code class="CodeExample">
+                &0 = "I'm a string";
+            </code>
+
+            <p>Outputs</p>
+            <code class="OutputCodeExample">
+                ERROR | &0 = "I'm a string";
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;^ is typed: Int, cannot implicitly cast to: Str
+                <br>
+                <br>
+                Explicit Cast Example:
+                <br>
+                Str Greeting:&0 = "I'm a String"	
+            </code>
+
+            <p>
+                Pineapple's memory space accepts the ultimate foot-gun in favor of an explicit, and simplistic knowledge on how it works. Everything in the program is bounded, living, and accessible. Everything outside of the program is not accessible.
+                <br><br>
+                The Iwa compiler tests all accessible bounds, and determines if the declarative bounds are measurable. If they are not, you will be provided an error at compile time dependant on the context, and you will have to flag the specific variable UNBOUNDED, or you will have to guard against it's bounds.
+            </p>
 
 
             <h2 id= "Variables" class="ContentHeading">Variables</h2>
-            <code>
+            <code class="CodeExample">
             <span class="PineappleLanguage">
                 <span class="Type">Int</span> <span class="Variable">Health</span> <span class="Operator">=</span> 50;
                 <br>
@@ -83,12 +164,36 @@
                 <span class="Type">Str</span> <span class="Variable">Greeting</span> <span class="Operator">=</span> <span class="String">"Hello there!"</span>;
                 <br>
                 <span class="Type">Str</span> <span class="Variable">Hello</span> <span class="Operator">=</span> <span class="Variable">Greeting</span>[0:4];
-                
+                </code>
+                <br>
+                You can explicitly cast if one would like.
+                <code class="CodeExample">
+                Int X = 5;  # Default to system word size #
+                <br>
+                Int64 Y = 1000000000000;  # Explicitly 64-bit #
+                <br>
+                Int8 Z = 100;  # Explicitly 8-bit #
+                <br>
+                <br>
+                Fnc ParseData(Int32 Data) {
+                <br>
+                    # Function that explicitly works with 32-bit integers #
+                <br>
+                }
+                <br>
+                # Compiler error that this will overflow: #
+                <br>
+                Int8 Small = 200;
+                </code>
+                <p>
+                    Pineapple attempts to take on a form of test-driven philosophy during compilation.
+                    Iwa will not let you compile what it thinks to be an unsafe program unless you painstakingly accept the consequences.
+                    This means that you should never ship a production product that does not check against it's bounds before compile time. All bounds are checked at 2 million by default.
+                </p>
             </span>
-            </code>
             
             <h2 id= "Conditionals" class="ContentHeading">Conditionals</h2>
-            <code>
+            <code class="CodeExample">
                 <span class="String">Str</span> <span class="Variable">Food</span> <span class="Operator">=</span> <span class="Function">In</span>(<span class="String">"What is your favorite food?"</span>);
                 <br>
                 <span class="ReservedKeyword">If</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Grapefruit"</span> {
@@ -121,7 +226,7 @@
 
 
                 <h2 id= "Loops" class="ContentHeading">Loops</h2>
-            <code>
+            <code class="CodeExample">
                 <span class="Type">Lst</span> <span class="Variable">Fruits</span> = [<span class="String">"Oranges"</span>, <span class="String">"Apples"</span>, <span class="String">"Bananas"</span>]
                 <br>
                 <span class="ReservedKeyword">For</span> <span class="Type">Str</span> <span class="Variable">Fruit</span> <span class="ReservedKeyword">in</span> <span class="Variable">Fruits</span> {
@@ -153,7 +258,7 @@
             </code>
 
             <h2 id= "Functions" class="ContentHeading">Functions</h2>
-            <code>
+            <code class="CodeExample">
             <span class="ReservedKeyword">Fnc</span> <span class="Function">Sum</span>(<span class="Type">Int</span> <span class="Variable">X</span>, <span class="Type">Int</span> <span class="Variable">Y</span>){
             <br>
             &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Return</span> <span class="Variable">X</span> <span class="Operator">+</span> <span class="Variable">Y</span>;
@@ -164,7 +269,7 @@
             </code>
 
             <h2 id= "Objects" class="ContentHeading">Objects</h2>
-            <code>
+            <code class="CodeExample">
             <span class="ReservedKeyword">Obj</span> <span class="Object">Person</span> {
             <br>
             &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Init</span>(<span class="Type">Str</span> <span class="Variable">InitialName</span>){
@@ -182,7 +287,7 @@
 
 
         <h2 id= "Inheritance" class="ContentHeading">Inheritance</h2>
-        <code>
+        <code class="CodeExample">
             <br><span class="ReservedKeyword">Obj</span> <span class="Object">Human</span> {
             <br>
             &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Init</span>(<span class="Type">Str</span> <span class="Variable">InitialName</span>){

@@ -51,7 +51,22 @@ p {
     font-size: 18px;
 }
 
-code {
+.OutputCodeExample {
+    display: block;
+    border-radius: 4px;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+
+}
+
+.InlineCodeExample {
+    display: inline-block;
+    border-radius: 4px;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+}
+
+.CodeExample {
     display: block;
     overflow: auto;
     padding: 0.5em;
@@ -68,7 +83,7 @@ code {
 
 .ListItem {
     text-align: left;
-    margin: auto;
+    margin: auto 0 auto 0;
 }
 
 .SubListItem {
@@ -147,9 +162,7 @@ a {
 }
 
 .LeftHandNavigation {
-    width: 12em;
-    margin-left: 6em;
-    text-align: center;
+    margin-left: 2em;
     grid-column: 1;
 }
 
@@ -157,17 +170,21 @@ a {
     background-color: rgb(6, 119, 57);
     width: 5%;
     grid-column: 2;
+    margin-left: 2em;
     margin-right: 2em;
 }
 
 .DocumentationContent {
-    width: 70%;
     font-size: 16px;
     grid-column: 3;
+    margin-right: 8em;
 }
 
 .ContentHeading {
+    display: inline;
     color: #10400f;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .Pineapple_Information {
