@@ -1,0 +1,22 @@
+body {
+    display: inline;
+}
+
+.ProfilePicture {
+    display: inline;
+    margin: auto;
+    margin-left: 2em;
+    border-radius: 20%;
+}
+
+.PersonalDescription {
+    display: inline;
+    margin-left: 3em;
+}
+
+.LeftHandBar {
+    display: inline-block;
+    background-color: blueviolet;
+    width: 1em;
+    height: 99%;
+}
