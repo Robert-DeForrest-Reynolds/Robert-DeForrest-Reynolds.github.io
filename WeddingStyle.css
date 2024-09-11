@@ -1,6 +1,33 @@
 body {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
     background-color: #bed3b5;
+}
+
+.FormDiv {
+    border: 1px solid #869480;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10% auto;
+}
+
+form {
+    margin: 10% auto;
+    width: fit-content;
+}
+
+input:active {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #bed3b5 inset !important;
+    -webkit-text-fill-color: black !important;
+}
+input {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    border-bottom: 1px solid #869480;
+    outline: none;
 }

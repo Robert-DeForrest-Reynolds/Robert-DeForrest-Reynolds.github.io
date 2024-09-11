@@ -2,7 +2,7 @@ const YesCheck = document.getElementById("YesCheck");
 const NoCheck = document.getElementById("NoCheck");
 
 YesCheck.addEventListener("change", function() {
-  if (this.checked) {
+  if (YesCheck.checked) {
     if (NoCheck.checked){
         NoCheck.checked = false
     }
@@ -10,7 +10,7 @@ YesCheck.addEventListener("change", function() {
 });
 
 NoCheck.addEventListener("change", function() {
-  if (this.checked) {
+  if (NoCheck.checked) {
     if (YesCheck.checked){
         YesCheck.checked = false
     }

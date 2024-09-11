@@ -4,38 +4,46 @@
         <title>Lani & Robert Reynolds</title>
     </head>
     <body>
-        <form action="https://formspree.io/f/mwpejejk" method="POST">
-        <div>
-            <label>
-                What is your name?
-                <input name="Name" required></input>
-            </label>
+        <div class="FormDiv">
+            <form action="https://formspree.io/f/mwpejejk" method="POST">
+            <div>
+                <label>
+                    What is your name?
+                    <input name="Name" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <!-- <label>
+                    <button type="submit">I can't make it</button>
+                </label> -->
+                <label>
+                    Are you coming?
+                </label>
+                <br><br>
+                <label>
+                    Yes
+                    <input id="YesCheck" type="checkbox" name="Coming">
+                </label>
+                &emsp;&emsp;&emsp;&emsp;
+                <label>
+                    No
+                    <input id="NoCheck" type="checkbox" name="NotComing">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Your message:
+                    <input name="Message">
+                </label>
+            </div>
+            <br>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+            </form>
         </div>
-        <br>
-        <div>
-            <label>
-                Are you coming?
-            </label>
-            <br><br>
-            <label>
-                Yes
-                <input type="checkbox" name="Coming">
-            </label>
-            &emsp;&emsp;&emsp;&emsp;
-            <label>
-                <button type="submit">No</button>
-            </label>
-        </div>
-        <br>
-        <div>
-            <label>
-                Your message:
-                <input name="Message"></input>
-            </label>
-        </div>
-        <br>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-        </form>
     </body>
 </Html>
+
+<script src="Wedding.js"></script>
