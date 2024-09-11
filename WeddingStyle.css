@@ -1,12 +1,29 @@
 body {
+    display: flex;
+    /* justify-content: center; */
     background-color: #bed3b5;
+}
+
+.RSVP {
+    position: relative;
+    margin: auto;
+}
+
+.Header {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.WeddingTitle {
+    width: 100%;
 }
 
 .FormDiv {
     border: 1px solid #869480;
     border-radius: 5px;
     width: 50%;
-    margin: 10% auto;
+    margin: 5% auto 10% auto;
 }
 
 form {
