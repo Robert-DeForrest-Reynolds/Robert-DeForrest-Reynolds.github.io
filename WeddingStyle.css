@@ -22,9 +22,11 @@ h1 {
   /* font-family: "Coming Soon", cursive; */
   font-weight: 400;
   font-style: normal;
-  margin: auto;
-  text-decoration: underline;
-  text-decoration-thickness: 0.05em;
+  margin: 0 auto 1em auto;
+  border-bottom: 0.05em solid #869480;
+  width: fit-content;
+  /* text-decoration: underline;
+  text-decoration-thickness: 0.05em; */
 }
 
 .RSVP {
