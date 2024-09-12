@@ -10,14 +10,14 @@
             </div>
             <div class="FormDiv">
                 <form action="https://formspree.io/f/mwpejejk" method="POST">
-                <div>
+                <div class="Name">
                     <label>
                         What is your name?
                         <input name="Name" required>
                     </label>
                 </div>
                 <br>
-                <div>
+                <div class="Arrival">
                     <!-- <label>
                         <button type="submit">I can't make it</button>
                     </label> -->
@@ -36,17 +36,65 @@
                     </label>
                 </div>
                 <br>
-                <div>
-            </div>
+                <br>
+                <div class="Guests">
+                    <label>
+                        Are you bringing guests?
+                    </label>
+                    <br><br>
+                    Yes
+                    <input id="YesCheckGuests" type="checkbox" name="BringingGuests">
+                </label>
+                </div>
+                <!-- Popup
+                What are their names? Are they 21+? -->
+                <br>
+                <div class="Menu">
+                    <label>
+                        <h1 id="Menu">Menu</h1>
+                    </label>
+                    <label class="Plate1">
+                        Plate 1
+                        <br><br>
+                        Sesame Chicken
+                        <br>
+                        Steamed Rice
+                        <br>
+                        Sauteed Vegatables
+                    </label>
+                    <label class="Plate2">
+                        Plate 2
+                        <br><br>
+                        Kalua Pork
+                        <br>
+                        Steamed Rice
+                        <br>
+                        Macaroni Salad
+                    </label>
+                    <label class="Plate3">
+                        Plate 3 (Vegan)
+                        <br><br>
+                        Sauteed Vegatables
+                    </label>
+                </div>
+                <br>
+                <div class="Message">
                     <label>
                         Your message:
                         <input name="Message">
                     </label>
                 </div>
                 <br>
+            </div>
+
+            <!-- Images and maybe a game -->
+
+
                 <!-- your other form fields go here -->
-                <button type="submit">Submit</button>
-                </form>
+            <div class="Submit">
+                <button class="SubmitButton" type="submit">Submit</button>
+            </div>
+            </form>
         </div>
     </body>
 </Html>
