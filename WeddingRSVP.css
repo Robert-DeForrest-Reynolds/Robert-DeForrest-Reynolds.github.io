@@ -1,32 +1,30 @@
 body {
     display: flex;
-    /* justify-content: center; */
     background-color: #bed3b5;
-    /* font-family: "Nothing You Could Do", cursive; */
-    /* font-family: "Great Vibes", cursive; */
     font-family: "Shadows Into Light Two", cursive;
-    /* font-family: "Zeyada", cursive; */
-    /* font-family: "Coming Soon", cursive; */
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 550;
     font-style: normal;
     font-size: 24;
     letter-spacing: 0.1em;
 }
 
+.Details {
+    margin: auto;
+    width: fit-content;
+}
+
+.Details p {
+    text-align: center;
+}
+
 h1 {
   font-family: "Nothing You Could Do", cursive;
-  /* font-family: "Great Vibes", cursive; */
-  /* font-family: "Shadows Into Light Two", cursive; */
-  /* font-family: "Zeyada", cursive; */
-  /* font-family: "Coming Soon", cursive; */
   font-weight: 400;
   font-style: normal;
   margin: 0 auto 1em auto;
   border-bottom: 0.05em solid #869480;
   width: fit-content;
-  /* text-decoration: underline;
-  text-decoration-thickness: 0.05em; */
 }
 
 .RSVP {
@@ -73,45 +71,14 @@ td {
     border-right: 1px solid #869480;
 }
 
-#Row2 td{
+#Row2 td {
     width: 50%;
     padding-bottom: 1em;
 }
 
-/* .Menu {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Menu > label:first-child, .Menu > label:last-child {
-    flex-basis: 100%;
-}
-
-.Menu > label {
-    flex-basis: 49.83%;
-    text-align: center;
-    padding-bottom: 1em;
-    margin: 0 auto 0 auto;
-}
-
-#Menu {
-    margin: auto;
-    width: fit-content;
-}
-
-.Plate1 {
-    border-right: 0.25px solid #869480;
-    border-bottom: 1px solid #869480;
-}
-
-.Plate2 {
-    border-left: 0.25px solid #869480;
-    border-bottom: 1px solid #869480;
-}
-
-.Plate3 {
+#Row3 td {
     padding-top: 1em;
-} */
+}
 
 .Submit {
     margin: auto;
