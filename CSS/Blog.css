@@ -1,0 +1,32 @@
+body {
+    background-color: #333333;
+    color: #DCDCDC;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 20;
+}
+h1 {
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    width: 50%;
+    text-align: center;
+}
+h3 {
+    margin: auto;
+    padding-bottom: 2em;
+    color: #b1b1b1;
+    width: 50%;
+    text-align: center;
+}
+p {
+    margin: auto;
+    width: 50%;
+}
+.Tab {
+    display: inline-block;
+    width: 2em;
+}
