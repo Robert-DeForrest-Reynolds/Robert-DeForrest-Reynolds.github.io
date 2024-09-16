@@ -22,7 +22,7 @@
                 <div class="Name">
                     <label>
                         What is your name?
-                        <input name="Name" required>
+                        <input  class="NameInput" name="Name" required>
                     </label>
                 </div>
                 <br>
@@ -34,15 +34,17 @@
                         Are you coming?
                     </label>
                     <br><br>
-                    <label>
-                        Yes
-                        <input id="YesCheck" type="checkbox" name="Coming">
-                    </label>
-                    &emsp;&emsp;&emsp;&emsp;
-                    <label>
-                        No
-                        <input id="NoCheck" type="checkbox" name="NotComing">
-                    </label>
+                    <div class="YesNoCheck">
+                        <label>
+                            Yes
+                            <input id="YesCheck" type="checkbox" name="Coming">
+                        </label>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <label>
+                            No
+                            <input id="NoCheck" type="checkbox" name="NotComing">
+                        </label>
+                    </div>
                 </div>
                 <br>
                 <br>
@@ -51,12 +53,33 @@
                         Are you bringing guests?
                     </label>
                     <br><br>
-                    Yes
-                    <input id="YesCheckGuests" type="checkbox" name="BringingGuests">
-                </label>
+                    <div class="YesNoCheck">
+                        <label>
+                            Yes
+                            <input id="YesCheckGuests" type="checkbox" name="BringingGuests">
+                        </label>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <label class="HiddenGem">
+                            No
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <div class="GuestNamesContainer">
+                        <input class="NameInput GuestInput" id="GuestName1" name="GuestName1" required>
+                        <input class="NameInput GuestInput" id="GuestName2" name="GuestName2" required>
+                        <input class="NameInput GuestInput" id="GuestName3" name="GuestName3" required>
+                        <input class="NameInput GuestInput" id="GuestName4" name="GuestName4" required>
+                        <input class="NameInput GuestInput" id="GuestName5" name="GuestName5" required>
+                        <input class="NameInput GuestInput" id="GuestName6" name="GuestName6" required>
+                        <input class="NameInput GuestInput" id="GuestName7" name="GuestName7" required>
+                        <input class="NameInput GuestInput" id="GuestName8" name="GuestName8" required>
+                    </div>
                 </div>
                 <!-- Popup
                 What are their names? Are they 21+? -->
+                <br>
+                <br><br>
+                <div class="MenuSeparator"></div>
                 <br>
                 <div class="Menu">
                     <table>
@@ -83,6 +106,9 @@
                         </tr>
                     </table>
                 </div>
+                <br>
+                <div class="MenuSeparator"></div>
+                <br><br>
                 <br>
                 <div class="Message">
                     <label>

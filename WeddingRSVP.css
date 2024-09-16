@@ -47,6 +47,40 @@ form {
     width: fit-content;
 }
 
+.GuestInput {
+    width: 35%;
+    display: none;
+}
+
+.GuestNamesContainer {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.NameInput {
+    font-family: "Shadows Into Light Two", cursive;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 24;
+}
+
+.YesNoCheck {
+    text-align: center;
+}
+
+.HiddenGem {
+    visibility: hidden;
+}
+
+.MenuSeparator {
+    background-color: black;
+    margin: auto;
+    height: 0.08em;
+    width: 100%;
+}
+
 .FormDiv {
     border: 1px solid #869480;
     border-radius: 5px;
