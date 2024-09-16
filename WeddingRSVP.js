@@ -32,6 +32,10 @@ YesCheckGuests.addEventListener("change", function() {
       GuestInputsLoaded = true
       Load_Guest_Inputs()
     }
+    if (GuestInputsLoaded == true){
+      GuestInputsLoaded = false
+      Unload_Guest_Inputs()
+    }
   }
 })
 
@@ -41,6 +45,18 @@ function Load_Guest_Inputs() {
   {
     GuestElement = document.getElementById("GuestName"+Iteration)
     GuestElement.style.display = "inline";
+    if (Iteration % 2 == 0){
+      GuestElement.insertAdjacentElement("afterend", document.createElement('br'))
+    }
+  }
+}
+
+function Unload_Guest_Inputs() {
+  console.log("Loading guest")
+  for (let Iteration = 1; Iteration <= GuestNameMax; Iteration++)
+  {
+    GuestElement = document.getElementById("GuestName"+Iteration)
+    GuestElement.style.display = "none";
     if (Iteration % 2 == 0){
       GuestElement.insertAdjacentElement("afterend", document.createElement('br'))
     }
