@@ -2,13 +2,8 @@ const YesCheck = document.getElementById("YesCheck");
 const NoCheck = document.getElementById("NoCheck");
 const YesCheckGuests = document.getElementById("YesCheckGuests")
 
-
 var GuestInputsLoaded = false
 var GuestNameMax = 8
-
-// for (let Iteration = 0; Iteration < GuestNameMax; Iteration++){
-//   document.getElementById("GuestName" + Iteration).style.display = none
-// }
 
 YesCheck.addEventListener("change", function() {
   if (YesCheck.checked) {
