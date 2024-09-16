@@ -27,11 +27,12 @@ NoCheck.addEventListener("change", function() {
 });
 
 YesCheckGuests.addEventListener("change", function() {
-  if (YesCheckGuests) {
+  if (YesCheckGuests.checked == true) {
     if (GuestInputsLoaded == false){
       GuestInputsLoaded = true
       Load_Guest_Inputs()
     }
+  } else {
     if (GuestInputsLoaded == true){
       GuestInputsLoaded = false
       Unload_Guest_Inputs()
@@ -45,20 +46,22 @@ function Load_Guest_Inputs() {
   {
     GuestElement = document.getElementById("GuestName"+Iteration)
     GuestElement.style.display = "inline";
+    LineBreak = document.createElement('br')
+    LineBreak.id = "Facade"
     if (Iteration % 2 == 0){
-      GuestElement.insertAdjacentElement("afterend", document.createElement('br'))
+      GuestElement.insertAdjacentElement("afterend", LineBreak)
     }
   }
 }
 
 function Unload_Guest_Inputs() {
-  console.log("Loading guest")
+  console.log("Unloading guest")
   for (let Iteration = 1; Iteration <= GuestNameMax; Iteration++)
   {
     GuestElement = document.getElementById("GuestName"+Iteration)
     GuestElement.style.display = "none";
     if (Iteration % 2 == 0){
-      GuestElement.insertAdjacentElement("afterend", document.createElement('br'))
+      document.getElementById("Facade").remove()
     }
   }
 }
