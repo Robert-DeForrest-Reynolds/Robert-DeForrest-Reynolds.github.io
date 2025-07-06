@@ -26,60 +26,60 @@
     <div class="Documentation">
         <div class="LeftHandNavigation">
             <div class="ListItem">
-                <a class="ContentHeading" href="#IntroductionForNewProgrammers">Introduction for New Programmers (WIP)</a>
+                <a class="ContentHeading" href="/IntroductionForNewProgrammers">Introduction for New Programmers (WIP)</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#IntroductionForExperienceProgrammers">Introduction for Experienced Programmers</a>
+                <a class="ContentHeading" href="/IntroductionForExperienceProgrammers">Introduction for Experienced Programmers</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#TheLanguage">The Language</a>
+                <a class="ContentHeading" href="/TheLanguage">The Language</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Output">Output</a>
+                <a class="ContentHeading" href="/Output">Output</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Input">Input</a>
+                <a class="ContentHeading" href="/Input">Input</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Comments">Comments</a>
+                <a class="ContentHeading" href="/Comments">Comments</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Variables">Variables</a>
+                <a class="ContentHeading" href="/Variables">Variables</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Conditionals">Conditionals</a>
+                <a class="ContentHeading" href="/Conditionals">Conditionals</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Loops">Loops</a>
+                <a class="ContentHeading" href="/Loops">Loops</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Functions">Functions</a>
+                <a class="ContentHeading" href="/Functions">Functions</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Importing&Modules">Importing & Modules</a>
+                <a class="ContentHeading" href="/Importing&Modules">Importing & Modules</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Objects">Objects</a>
+                <a class="ContentHeading" href="/Objects">Objects</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Inheritance">Inheritance</a>
+                <a class="ContentHeading" href="/Inheritance">Inheritance</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Casting">Casting</a>
+                <a class="ContentHeading" href="/Casting">Casting</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Copying">Copying</a>
+                <a class="ContentHeading" href="/Copying">Copying</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Strings">Strings</a>
+                <a class="ContentHeading" href="/Strings">Strings</a>
             </div>
             <div class="ListItem">
-                <a class="ContentHeading" href="#Memory Management">Memory Management</a>
+                <a class="ContentHeading" href="/Memory Management">Memory Management</a>
             </div>
         </div>
         <div class="VerticalSeparator"></div>
         <div class="DocumentationContent">
-            <h2 id="#IntroductionForProgrammers" class="ContentHeading">Introduction for Experienced Programmers</h2>
+            <h2 id="/IntroductionForProgrammers" class="ContentHeading">Introduction for Experienced Programmers</h2>
             <p>Pineapple is the name of the language. Iwa is the name of the compiler I built for it. Iwa generates C code, and utilizes clang to compile the C code.
                Pineapple gets translated into an intermediate language using Python that is easier to work with, that is then used when generating C code.
                This intermediate code can then be easily made compatible with any compiler.
@@ -139,15 +139,16 @@
 
             <h2 id= "Variables" class="ContentHeading">Variables</h2>
             <code class="CodeExample">
-                <span class="Type">Int</span> <span class="Variable">Health</span> <span class="Operator">=</span> 50;
+                <span class="Type">Int</span> <span class="Variable">Health</span> <span class="Operator">=</span> 50
                 <br>
-                <span class="Type">Str</span> <span class="Variable">FirstName</span> <span class="Operator">=</span> <span class="String">Roger</span>;
+                <span class="Type">String</span> <span class="Variable">FirstName</span> <span class="Operator">=</span> <span class="String">"Roger"</span>
                 <br>
-                <span class="Type">Str</span> <span class="Variable">LastName</span> <span class="Operator">=</span> <span class="String">Rabbit</span>;
+                <span class="Type">String</span> <span class="Variable">LastName</span> <span class="Operator">=</span> <span class="String">"Rabbit"</span>
                 <br>
-                <span class="Type">Str</span> <span class="Variable">FullName</span> <span class="Operator">=</span> <span class="String">"{<span class="Variable">FirstName</span>} {<span class="Variable">LastName</span>}"</span>;
+                <span class="Type">String</span> <span class="Variable">FullName</span> <span class="Operator">=</span> <span class="String">"{<span class="Variable">FirstName</span>} {<span class="Variable">LastName</span>}"</span>
                 <br>
-                <span class="Type">Str</span> <span class="Variable">Multiline</span> = | <span class="Comment"># Always skips the first new line #</span>
+                <br>
+                <span class="Type">String</span> <span class="Variable">Multiline</span> = | <span class="Comment">/ Always skips the first new line /</span>
                 <span class="String">
                 <br>
                 This is
@@ -156,16 +157,17 @@
                 <br>
                 string.
                 <br>
-                ; <span class="Comment"># Also skips the last new line #</span>
-                <br>
-                <span class="Comment"># Strings are arrays as always, and can be index, and sliced. Slices are inclusive. #</span>
-                <br>
-                <span class="Type">Str</span> <span class="Variable">Greeting</span> <span class="Operator">=</span> <span class="String">"Hello there!"</span>;
-                <br>
-                <span class="Type">Str</span> <span class="Variable">Hello</span> <span class="Operator">=</span> <span class="Variable">Greeting</span>[0:4];
+                ; <span class="Comment">/ Also skips the last new line /</span>
                 <br>
                 <br>
-                <span class="Type">Dct</span> <span class="Variable">Students</span> <span class="Operator">=</span> [
+                <span class="Comment">/ Strings are arrays as always, and can be index, and sliced. Slices are inclusive. /</span>
+                <br>
+                <span class="Type">String</span> <span class="Variable">Greeting</span> <span class="Operator">=</span> <span class="String">"Hello there!"</span>
+                <br>
+                <span class="Type">String</span> <span class="Variable">Hello</span> <span class="Operator">=</span> <span class="Variable">Greeting</span>[0:4]
+                <br>
+                <br>
+                <span class="Type">Dict</span> <span class="Variable">Students</span> <span class="Operator">=</span> [
                 <br>
                 &emsp;&emsp;&emsp;&emsp;<span class="String">"Kevin"</span>:14,
                 <br>
@@ -175,24 +177,27 @@
                 <br>
                 ]
                 <br>
+                <br>
+                <span class="Type">List</span> <span class="Variable">Fruits</span> = [<span class="String">"Oranges"</span>, <span class="String">"Apples"</span>, <span class="String">"Bananas"</span>]
+                <br>
                 </code>
                 <br>
                 You can explicitly cast if one would like.
                 <code class="CodeExample">
-                Int X = 5;  # Default to system word size #
+                Int X = 5;  / Default to system word size /
                 <br>
-                Int64 Y = 1000000000000;  # Explicitly 64-bit #
+                Int64 Y = 1000000000000;  / Explicitly 64-bit /
                 <br>
-                Int8 Z = 100;  # Explicitly 8-bit #
+                Int8 Z = 100;  / Explicitly 8-bit /
                 <br>
                 <br>
                 Fnc ParseData(Int32 Data) {
                 <br>
-                    # Function that explicitly works with 32-bit integers #
+                    / Function that explicitly works with 32-bit integers /
                 <br>
                 }
                 <br>
-                # Compiler error that this will overflow: #
+                / Compiler error that this will overflow: /
                 <br>
                 Int8 Small = 256;
             </code>
@@ -204,40 +209,39 @@
             
             <h2 id= "Conditionals" class="ContentHeading">Conditionals</h2>
             <code class="CodeExample">
-                <span class="String">Str</span> <span class="Variable">Food</span> <span class="Operator">=</span> <span class="Function">In</span>(<span class="String">"What is your favorite food?"</span>);
+                <span class="String">String</span> <span class="Variable">Food</span> <span class="Operator">=</span> <span class="Function">In</span>(<span class="String">"What is your favorite food?"</span>)
                 <br>
-                <span class="ReservedKeyword">If</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Grapefruit"</span> {
+                <span class="ReservedKeyword">If</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Grapefruit"</span> 
                 <br>
-                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I don't like this food."</span>);
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I don't like this food."</span>)
                 <br>
-                } <span class="ReservedKeyword">Or</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Strawberries"</span> {
+                 <span class="ReservedKeyword">Or</span> <span class="Variable">Food</span> <span class="Operator">==</span> <span class="String">"Strawberries"</span> 
                 <br>
-                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I like this food."</span>);
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I like this food."</span>)
                 <br>
-                } <span class="ReservedKeyword">Else</span> {
+                 <span class="ReservedKeyword">Else</span> 
                 <br>
-                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I don't know about this food."</span>);
-                <br>
-                }
+                &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="String">"I don't know about this food."</span>)
                 <br>
                 
                 <br>
-                <span class="Comment"># `not in` is a thing #</span>
+                
                 <br>
-                <span class="Type">Lst</span> <span class="Variable">Students</span> = [<span class="String">"Jeffery"</span>, <span class="String">"Sara"</span>, <span class="String">"Kevin"</span>];
+                <span class="Comment">/ `not in` is a thing /</span>
                 <br>
-                <span class="ReservedKeyword">If</span> <span class="String">"Aaron"</span> <span class="ReservedKeyword">not in</span> <span class="Variable">Students</span> {
+                <span class="Type">List</span> <span class="Variable">Students</span> = [<span class="String">"Jeffery"</span>, <span class="String">"Sara"</span>, <span class="String">"Kevin"</span>];
+                <br>
+                <span class="ReservedKeyword">If</span> <span class="String">"Aaron"</span> <span class="ReservedKeyword">not in</span> <span class="Variable">Students</span>
                 <br>
                 &emsp;&emsp;&emsp;&emsp;<span class="Variable">Students</span>.<span class="Method">Append</span>(<span class="String">"Aaron"</span>);
                 <br>
-                }
                 <br>
                 </code>
 
 
                 <h2 id= "Loops" class="ContentHeading">Loops</h2>
             <code class="CodeExample">
-                <span class="Type">Lst</span> <span class="Variable">Fruits</span> = [<span class="String">"Oranges"</span>, <span class="String">"Apples"</span>, <span class="String">"Bananas"</span>]
+                <span class="Type">List</span> <span class="Variable">Fruits</span> = [<span class="String">"Oranges"</span>, <span class="String">"Apples"</span>, <span class="String">"Bananas"</span>]
                 <br>
                 <span class="ReservedKeyword">For</span> <span class="Type">Str</span> <span class="Variable">Fruit</span> <span class="ReservedKeyword">in</span> <span class="Variable">Fruits</span> {
                 <br>
@@ -284,9 +288,9 @@
             <br>
             &emsp;&emsp;&emsp;&emsp;<span class="ReservedKeyword">Fnc</span> <span class="Method">Init</span>(<span class="Type">Str</span> <span class="Variable">InitialName</span>){
             <br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Comment"># All Object variables are fully scoped to the object,</span>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Comment">/ All Object variables are fully scoped to the object,</span>
             <br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Comment">and can be accessed from any method without any notation. #</span>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Comment">and can be accessed from any method without any notation. /</span>
             <br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="Type">Str</span> <span class="Variable">Name</span> <span class="Operator">=</span> <span class="Variable">InitialName</span>;
             <br>
@@ -324,6 +328,26 @@
             &emsp;&emsp;&emsp;&emsp;}
             <br>
             }
+        </code>
+        
+        <br>
+
+        <h2 id= "Memory" class="ContentHeading">Memory</h2>
+        <code class="CodeExample">
+            <span class="Type">String</span> <span class="Variable">Content</span>
+            <br>
+            <span class="Type">File</span> <span class="Variable">SomeFile</span> <span class="Operator">=</span> <span class="Function">Open(<span class="String">"FileName.txt"</span>)</span>
+            <br>
+            <span class="ReservedKeyword">If</span> <span class="Variable">SomeFile</span> <span class="Operator">!=</span> <span class="Null">Null</span>
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="Type">String</span> <span class="Variable">Content</span> <span class="Operator">=</span> <span class="Function">Read(SomeFile)</span>
+            <br>
+            <span class="ReservedKeyword">If</span> <span class="Variable">Content?</span> <span class="Operator">!=</span> <span class="Null">Null</span>
+            <br>
+            &emsp;&emsp;&emsp;&emsp;<span class="Function">Out</span>(<span class="Variable">Content</span>)
+            <br>
+            <br>
+            <span class="Comment">/ File will be closed first, and Content will be released last if initalized at all /</span>
         </code>
         </div>
     </div>
